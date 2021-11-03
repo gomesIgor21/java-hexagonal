@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface PostServicePort {
     Post save(Post post);
-    List<Post> finsAll();
+    List<Post> findAll();
 }
