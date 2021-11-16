@@ -1,10 +1,10 @@
-package com.hexagonal.core.ports.outbound.service;
+package com.hexagonal.core.ports.outbound;
 
 import com.hexagonal.core.domain.Post;
 
 import java.util.List;
 
-public interface PostServicePort {
+public interface PostRepositoryPort {
     Post save(Post post);
     List<Post> findAll();
 }

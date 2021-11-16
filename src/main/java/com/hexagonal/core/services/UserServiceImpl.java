@@ -1,8 +1,10 @@
 package com.hexagonal.core.services;
 
 import com.hexagonal.core.domain.User;
-import com.hexagonal.core.ports.outbound.repository.UserRepositoryPort;
-import com.hexagonal.core.ports.outbound.service.UserServicePort;
+import com.hexagonal.core.ports.outbound.UserRepositoryPort;
+import com.hexagonal.core.ports.inbound.UserServicePort;
+
+import java.util.List;
 
 public class UserServiceImpl implements UserServicePort {
 
@@ -16,4 +18,7 @@ public class UserServiceImpl implements UserServicePort {
     public User save(User user){
         return userRepositoryPort.save(user);
     }
+
+    @Override
+    public List<User> findAll() { return userRepositoryPort.findAll();}
 }

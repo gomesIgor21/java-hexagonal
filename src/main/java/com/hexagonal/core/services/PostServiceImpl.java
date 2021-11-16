@@ -1,8 +1,8 @@
 package com.hexagonal.core.services;
 
 import com.hexagonal.core.domain.Post;
-import com.hexagonal.core.ports.outbound.repository.PostRepositoryPort;
-import com.hexagonal.core.ports.outbound.service.PostServicePort;
+import com.hexagonal.core.ports.outbound.PostRepositoryPort;
+import com.hexagonal.core.ports.inbound.PostServicePort;
 
 import java.util.List;
 
